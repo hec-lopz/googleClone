@@ -1,0 +1,139 @@
+body, html, ul, figure {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  font-size: inherit;
+  color: inherit;
+}
+
+input {
+  margin: 0;
+  border: none;
+  font-family: inherit;
+}
+
+:root {
+  --black-color: #222;
+  --gray-color: #9AA0A6;
+  --blue-color:#1a0dab;
+  --secondary-text-color:#5f6368;
+
+  --main-text: 14px;
+  --secondary-text: 13px;
+
+  
+  --box-shadow: 0px 0 7px 0px #B6BDC6;
+  --box-background: rgb(242, 242, 242);
+  --box-border: 1px solid #c6c6c6;
+}
+
+nav {
+  padding: 20px;
+  font-size: var(--secondary-text);
+  color: var(--black-color);
+}
+ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+ul li {
+  margin-right: 10px ;
+}
+
+ul i {
+  font-size: 30px;
+}
+
+ul img {
+  width: 32px;
+  border-radius: 50%;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.logo-container img {
+  width: 400px;
+
+}
+
+.search-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "bar bar bar bar"
+                        ". btn-1 btn-2 .";
+  max-width: 600px;
+  margin: 0 auto;
+  row-gap: 20px;
+  column-gap: 10px;
+}
+
+.search-bar {
+  grid-area: bar;
+  border-radius: 50px;
+  /* border: 1px solid var(--gray-color); */
+  box-shadow: var(--box-shadow) ;
+  height: 34px;
+  margin-top: -250px 0 7px 0px #B6BDC6;
+  /* padding: 0 50px; */
+  background-image: url(../images/);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.search-bar__input {
+  margin: 0 auto;
+  width: 85%;
+  height: 90%;
+}
+.search-bar__magni-icon {
+  width: 15px;
+  position: relative;
+  left: 20px;
+}
+
+
+.search-btn {
+  grid-area: btn-1;
+}
+.lucky-btn {
+  grid-area: btn-2;
+}
+
+.search-btn, .lucky-btn {
+  padding: 10px 20px;
+  align-self: center;
+  font-size: var(--main-text);
+  border-radius: 5px;
+  background-color: var(--box-background) ;
+  color: var(--secondary-text-color);
+}
+footer {
+  background-color: var(--box-background);
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  font-size: var(--secondary-text);
+  color: var(--secondary-text-color);
+  padding: 0 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+/* 
+.space  {
+  width: 100vw;
+  height: 48.7vh;
+} */
